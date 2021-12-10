@@ -1,0 +1,650 @@
+
+<!DOCTYPE html
+  PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+   <head>
+      <meta charset="UTF-8"/>
+      <title>SpotBugs Report</title>
+      <style type="text/css">
+		.tablerow0 {
+			background: #EEEEEE;
+		}
+
+		.tablerow1 {
+			background: white;
+		}
+
+		.detailrow0 {
+			background: #EEEEEE;
+		}
+
+		.detailrow1 {
+			background: white;
+		}
+
+		.tableheader {
+			background: #b9b9fe;
+			font-size: larger;
+		}
+		</style>
+   </head>
+   <body>
+      <h1>SpotBugs Report</h1>
+      <p>Produced using <a href="https://spotbugs.github.io">SpotBugs</a>4.4.2.</p>
+      <p>Project: 
+			gson-spotbugs[gson-spotbugs]</p>
+      <h2>Metrics</h2>
+      <p>6526 lines of code analyzed,
+	in 203 classes, 
+	in 9 packages.</p>
+      <table width="500" cellpadding="5" cellspacing="2">
+         <tr class="tableheader">
+            <th align="left">Metric</th>
+            <th align="right">Total</th>
+            <th align="right">Density*</th>
+         </tr>
+         <tr class="tablerow0">
+            <td>High Priority Warnings</td>
+            <td align="right">8</td>
+            <td align="right">1.23</td>
+         </tr>
+         <tr class="tablerow1">
+            <td>Medium Priority Warnings</td>
+            <td align="right">16</td>
+            <td align="right">2.45</td>
+         </tr>
+         <tr class="$totalClass">
+            <td>
+               <b>Total Warnings</b>
+            </td>
+            <td align="right">
+               <b>24</b>
+            </td>
+            <td align="right">
+               <b>3.68</b>
+            </td>
+         </tr>
+      </table>
+      <p>
+         <i>(* Defects per Thousand lines of non-commenting source statements)</i>
+      </p>
+      <p>
+         <br/>
+         <br/>
+      </p>
+      <h2>Summary</h2>
+      <table width="500" cellpadding="5" cellspacing="2">
+         <tr class="tableheader">
+            <th align="left">Warning Type</th>
+            <th align="right">Number</th>
+         </tr>
+         <tr class="tablerow0">
+            <td>
+               <a href="#Warnings_BAD_PRACTICE">Bad practice Warnings</a>
+            </td>
+            <td align="right">10</td>
+         </tr>
+         <tr class="tablerow1">
+            <td>
+               <a href="#Warnings_CORRECTNESS">Correctness Warnings</a>
+            </td>
+            <td align="right">1</td>
+         </tr>
+         <tr class="tablerow0">
+            <td>
+               <a href="#Warnings_MALICIOUS_CODE">Malicious code vulnerability Warnings</a>
+            </td>
+            <td align="right">4</td>
+         </tr>
+         <tr class="tablerow1">
+            <td>
+               <a href="#Warnings_STYLE">Dodgy code Warnings</a>
+            </td>
+            <td align="right">9</td>
+         </tr>
+         <tr class="tablerow0">
+            <td>
+               <b>Total</b>
+            </td>
+            <td align="right">
+               <b>24</b>
+            </td>
+         </tr>
+      </table>
+      <p>
+         <br/>
+         <br/>
+      </p>
+      <h1>Warnings</h1>
+      <p>Click on each warning link to see a full description of the issue, and
+	    details of how to resolve it.</p>
+      <h2>
+         <a name="Warnings_BAD_PRACTICE">Bad practice Warnings</a>
+      </h2>
+      <table class="warningtable"
+             width="100%"
+             cellspacing="2"
+             cellpadding="5">
+         <tr class="tableheader">
+            <th align="left">Warning</th>
+            <th align="left">Priority</th>
+            <th align="left">Details</th>
+         </tr>
+         <tr class="tablerow1">
+            <td width="20%" valign="top">
+               <a href="#SE_BAD_FIELD">Non-transient non-serializable instance field in serializable class</a>
+            </td>
+            <td width="10%" valign="top">High</td>
+            <td width="70%">
+               <p>Class com.google.gson.internal.LinkedHashTreeMap defines non-transient non-serializable instance field entrySet<br/>
+                  <br/>
+                  <br/>In file LinkedHashTreeMap.java,
+					
+						lines 
+						    to <br/>In class com.google.gson.internal.LinkedHashTreeMap<br/>Field com.google.gson.internal.LinkedHashTreeMap.entrySet<br/>Actual type com.google.gson.internal.LinkedHashTreeMap$EntrySet<br/>In LinkedHashTreeMap.java</p>
+            </td>
+         </tr>
+         <tr class="tablerow0">
+            <td width="20%" valign="top">
+               <a href="#SE_BAD_FIELD">Non-transient non-serializable instance field in serializable class</a>
+            </td>
+            <td width="10%" valign="top">High</td>
+            <td width="70%">
+               <p>Class com.google.gson.internal.LinkedHashTreeMap defines non-transient non-serializable instance field header<br/>
+                  <br/>
+                  <br/>In file LinkedHashTreeMap.java,
+					
+						lines 
+						    to <br/>In class com.google.gson.internal.LinkedHashTreeMap<br/>Field com.google.gson.internal.LinkedHashTreeMap.header<br/>Actual type com.google.gson.internal.LinkedHashTreeMap$Node&lt;K,V&gt;<br/>In LinkedHashTreeMap.java</p>
+            </td>
+         </tr>
+         <tr class="tablerow1">
+            <td width="20%" valign="top">
+               <a href="#SE_BAD_FIELD">Non-transient non-serializable instance field in serializable class</a>
+            </td>
+            <td width="10%" valign="top">High</td>
+            <td width="70%">
+               <p>Class com.google.gson.internal.LinkedHashTreeMap defines non-transient non-serializable instance field keySet<br/>
+                  <br/>
+                  <br/>In file LinkedHashTreeMap.java,
+					
+						lines 
+						    to <br/>In class com.google.gson.internal.LinkedHashTreeMap<br/>Field com.google.gson.internal.LinkedHashTreeMap.keySet<br/>Actual type com.google.gson.internal.LinkedHashTreeMap$KeySet<br/>In LinkedHashTreeMap.java</p>
+            </td>
+         </tr>
+         <tr class="tablerow0">
+            <td width="20%" valign="top">
+               <a href="#SE_BAD_FIELD">Non-transient non-serializable instance field in serializable class</a>
+            </td>
+            <td width="10%" valign="top">High</td>
+            <td width="70%">
+               <p>Class com.google.gson.internal.LinkedHashTreeMap defines non-transient non-serializable instance field table<br/>
+                  <br/>
+                  <br/>In file LinkedHashTreeMap.java,
+					
+						lines 
+						    to <br/>In class com.google.gson.internal.LinkedHashTreeMap<br/>Field com.google.gson.internal.LinkedHashTreeMap.table<br/>Actual type com.google.gson.internal.LinkedHashTreeMap$Node<br/>In LinkedHashTreeMap.java</p>
+            </td>
+         </tr>
+         <tr class="tablerow1">
+            <td width="20%" valign="top">
+               <a href="#SE_BAD_FIELD">Non-transient non-serializable instance field in serializable class</a>
+            </td>
+            <td width="10%" valign="top">High</td>
+            <td width="70%">
+               <p>Class com.google.gson.internal.LinkedTreeMap defines non-transient non-serializable instance field header<br/>
+                  <br/>
+                  <br/>In file LinkedTreeMap.java,
+					
+						lines 
+						    to <br/>In class com.google.gson.internal.LinkedTreeMap<br/>Field com.google.gson.internal.LinkedTreeMap.header<br/>Actual type com.google.gson.internal.LinkedTreeMap$Node&lt;K,V&gt;<br/>In LinkedTreeMap.java</p>
+            </td>
+         </tr>
+         <tr class="tablerow0">
+            <td width="20%" valign="top">
+               <a href="#SE_BAD_FIELD">Non-transient non-serializable instance field in serializable class</a>
+            </td>
+            <td width="10%" valign="top">High</td>
+            <td width="70%">
+               <p>Class com.google.gson.internal.LinkedTreeMap defines non-transient non-serializable instance field keySet<br/>
+                  <br/>
+                  <br/>In file LinkedTreeMap.java,
+					
+						lines 
+						    to <br/>In class com.google.gson.internal.LinkedTreeMap<br/>Field com.google.gson.internal.LinkedTreeMap.keySet<br/>Actual type com.google.gson.internal.LinkedTreeMap$KeySet<br/>In LinkedTreeMap.java</p>
+            </td>
+         </tr>
+         <tr class="tablerow1">
+            <td width="20%" valign="top">
+               <a href="#SE_BAD_FIELD">Non-transient non-serializable instance field in serializable class</a>
+            </td>
+            <td width="10%" valign="top">High</td>
+            <td width="70%">
+               <p>Class com.google.gson.internal.LinkedTreeMap defines non-transient non-serializable instance field root<br/>
+                  <br/>
+                  <br/>In file LinkedTreeMap.java,
+					
+						lines 
+						    to <br/>In class com.google.gson.internal.LinkedTreeMap<br/>Field com.google.gson.internal.LinkedTreeMap.root<br/>Actual type com.google.gson.internal.LinkedTreeMap$Node&lt;K,V&gt;<br/>In LinkedTreeMap.java</p>
+            </td>
+         </tr>
+         <tr class="tablerow0">
+            <td width="20%" valign="top">
+               <a href="#NP_BOOLEAN_RETURN_NULL">Method with Boolean return type returns explicit null</a>
+            </td>
+            <td width="10%" valign="top">Medium</td>
+            <td width="70%">
+               <p>com.google.gson.internal.bind.TypeAdapters$3.read(JsonReader) has Boolean return type and returns explicit null<br/>
+                  <br/>
+                  <br/>In file TypeAdapters.java TypeAdapters.java,
+					
+						line 133 133<br/>In class com.google.gson.internal.bind.TypeAdapters$3<br/>In method com.google.gson.internal.bind.TypeAdapters$3.read(JsonReader)<br/>At TypeAdapters.java:[line 133]<br/>At TypeAdapters.java:[line 133]</p>
+            </td>
+         </tr>
+         <tr class="tablerow1">
+            <td width="20%" valign="top">
+               <a href="#NP_BOOLEAN_RETURN_NULL">Method with Boolean return type returns explicit null</a>
+            </td>
+            <td width="10%" valign="top">Medium</td>
+            <td width="70%">
+               <p>com.google.gson.internal.bind.TypeAdapters$4.read(JsonReader) has Boolean return type and returns explicit null<br/>
+                  <br/>
+                  <br/>In file TypeAdapters.java TypeAdapters.java,
+					
+						line 154 154<br/>In class com.google.gson.internal.bind.TypeAdapters$4<br/>In method com.google.gson.internal.bind.TypeAdapters$4.read(JsonReader)<br/>At TypeAdapters.java:[line 154]<br/>At TypeAdapters.java:[line 154]</p>
+            </td>
+         </tr>
+         <tr class="tablerow0">
+            <td width="20%" valign="top">
+               <a href="#SE_BAD_FIELD">Non-transient non-serializable instance field in serializable class</a>
+            </td>
+            <td width="10%" valign="top">Medium</td>
+            <td width="70%">
+               <p>Class com.google.gson.internal.LinkedTreeMap defines non-transient non-serializable instance field entrySet<br/>
+                  <br/>
+                  <br/>In file LinkedTreeMap.java,
+					
+						lines 
+						    to <br/>In class com.google.gson.internal.LinkedTreeMap<br/>Field com.google.gson.internal.LinkedTreeMap.entrySet<br/>Actual type com.google.gson.internal.LinkedTreeMap$EntrySet<br/>In LinkedTreeMap.java</p>
+            </td>
+         </tr>
+      </table>
+      <p>
+         <br/>
+         <br/>
+      </p>
+      <h2>
+         <a name="Warnings_CORRECTNESS">Correctness Warnings</a>
+      </h2>
+      <table class="warningtable"
+             width="100%"
+             cellspacing="2"
+             cellpadding="5">
+         <tr class="tableheader">
+            <th align="left">Warning</th>
+            <th align="left">Priority</th>
+            <th align="left">Details</th>
+         </tr>
+         <tr class="tablerow1">
+            <td width="20%" valign="top">
+               <a href="#SA_FIELD_SELF_ASSIGNMENT">Self assignment of field</a>
+            </td>
+            <td width="10%" valign="top">High</td>
+            <td width="70%">
+               <p>Self assignment of field LinkedHashTreeMap$Node.parent in com.google.gson.internal.LinkedHashTreeMap$AvlBuilder.add(LinkedHashTreeMap$Node)<br/>
+                  <br/>
+                  <br/>In file LinkedHashTreeMap.java,
+					
+						line 746<br/>In class com.google.gson.internal.LinkedHashTreeMap$AvlBuilder<br/>In method com.google.gson.internal.LinkedHashTreeMap$AvlBuilder.add(LinkedHashTreeMap$Node)<br/>Field com.google.gson.internal.LinkedHashTreeMap$Node.parent<br/>At LinkedHashTreeMap.java:[line 746]</p>
+            </td>
+         </tr>
+      </table>
+      <p>
+         <br/>
+         <br/>
+      </p>
+      <h2>
+         <a name="Warnings_MALICIOUS_CODE">Malicious code vulnerability Warnings</a>
+      </h2>
+      <table class="warningtable"
+             width="100%"
+             cellspacing="2"
+             cellpadding="5">
+         <tr class="tableheader">
+            <th align="left">Warning</th>
+            <th align="left">Priority</th>
+            <th align="left">Details</th>
+         </tr>
+         <tr class="tablerow1">
+            <td width="20%" valign="top">
+               <a href="#EI_EXPOSE_REP2">May expose internal representation by incorporating reference to mutable object</a>
+            </td>
+            <td width="10%" valign="top">Medium</td>
+            <td width="70%">
+               <p>new com.google.gson.FieldAttributes(Field) may expose internal representation by storing an externally mutable object into FieldAttributes.field<br/>
+                  <br/>
+                  <br/>In file FieldAttributes.java FieldAttributes.java,
+					
+						line 46 46<br/>In class com.google.gson.FieldAttributes<br/>In method new com.google.gson.FieldAttributes(Field)<br/>Field com.google.gson.FieldAttributes.field<br/>Local variable named f<br/>At FieldAttributes.java:[line 46]<br/>At FieldAttributes.java:[line 46]</p>
+            </td>
+         </tr>
+         <tr class="tablerow0">
+            <td width="20%" valign="top">
+               <a href="#EI_EXPOSE_REP2">May expose internal representation by incorporating reference to mutable object</a>
+            </td>
+            <td width="10%" valign="top">Medium</td>
+            <td width="70%">
+               <p>new com.google.gson.internal.ConstructorConstructor(Map) may expose internal representation by storing an externally mutable object into ConstructorConstructor.instanceCreators<br/>
+                  <br/>
+                  <br/>In file ConstructorConstructor.java ConstructorConstructor.java,
+					
+						line 54 54<br/>In class com.google.gson.internal.ConstructorConstructor<br/>In method new com.google.gson.internal.ConstructorConstructor(Map)<br/>Field com.google.gson.internal.ConstructorConstructor.instanceCreators<br/>Local variable named instanceCreators<br/>At ConstructorConstructor.java:[line 54]<br/>At ConstructorConstructor.java:[line 54]</p>
+            </td>
+         </tr>
+         <tr class="tablerow1">
+            <td width="20%" valign="top">
+               <a href="#EI_EXPOSE_REP2">May expose internal representation by incorporating reference to mutable object</a>
+            </td>
+            <td width="10%" valign="top">Medium</td>
+            <td width="70%">
+               <p>new com.google.gson.stream.JsonWriter(Writer) may expose internal representation by storing an externally mutable object into JsonWriter.out<br/>
+                  <br/>
+                  <br/>In file JsonWriter.java JsonWriter.java,
+					
+						line 202 202<br/>In class com.google.gson.stream.JsonWriter<br/>In method new com.google.gson.stream.JsonWriter(Writer)<br/>Field com.google.gson.stream.JsonWriter.out<br/>Local variable named out<br/>At JsonWriter.java:[line 202]<br/>At JsonWriter.java:[line 202]</p>
+            </td>
+         </tr>
+         <tr class="tablerow0">
+            <td width="20%" valign="top">
+               <a href="#MS_CANNOT_BE_FINAL">Field isn't final and can't be protected from malicious code</a>
+            </td>
+            <td width="10%" valign="top">Medium</td>
+            <td width="70%">
+               <p>com.google.gson.internal.JsonReaderInternalAccess.INSTANCE isn't final and can't be protected from malicious code<br/>
+                  <br/>
+                  <br/>In file JsonReader.java,
+					
+						line 1588<br/>In class com.google.gson.internal.JsonReaderInternalAccess<br/>Field com.google.gson.internal.JsonReaderInternalAccess.INSTANCE<br/>At JsonReader.java:[line 1588]</p>
+            </td>
+         </tr>
+      </table>
+      <p>
+         <br/>
+         <br/>
+      </p>
+      <h2>
+         <a name="Warnings_STYLE">Dodgy code Warnings</a>
+      </h2>
+      <table class="warningtable"
+             width="100%"
+             cellspacing="2"
+             cellpadding="5">
+         <tr class="tableheader">
+            <th align="left">Warning</th>
+            <th align="left">Priority</th>
+            <th align="left">Details</th>
+         </tr>
+         <tr class="tablerow1">
+            <td width="20%" valign="top">
+               <a href="#NP_LOAD_OF_KNOWN_NULL_VALUE">Load of known null value</a>
+            </td>
+            <td width="10%" valign="top">Medium</td>
+            <td width="70%">
+               <p>Load of known null value in com.google.gson.internal.LinkedHashTreeMap.find(Object, boolean)<br/>
+                  <br/>
+                  <br/>In file LinkedHashTreeMap.java LinkedHashTreeMap.java,
+					
+						line 182 182<br/>In class com.google.gson.internal.LinkedHashTreeMap<br/>In method com.google.gson.internal.LinkedHashTreeMap.find(Object, boolean)<br/>Value loaded from nearest<br/>At LinkedHashTreeMap.java:[line 182]<br/>At LinkedHashTreeMap.java:[line 182]</p>
+            </td>
+         </tr>
+         <tr class="tablerow0">
+            <td width="20%" valign="top">
+               <a href="#NP_LOAD_OF_KNOWN_NULL_VALUE">Load of known null value</a>
+            </td>
+            <td width="10%" valign="top">Medium</td>
+            <td width="70%">
+               <p>Load of known null value in com.google.gson.internal.LinkedTreeMap.find(Object, boolean)<br/>
+                  <br/>
+                  <br/>In file LinkedTreeMap.java LinkedTreeMap.java,
+					
+						line 169 169<br/>In class com.google.gson.internal.LinkedTreeMap<br/>In method com.google.gson.internal.LinkedTreeMap.find(Object, boolean)<br/>Value loaded from nearest<br/>At LinkedTreeMap.java:[line 169]<br/>At LinkedTreeMap.java:[line 169]</p>
+            </td>
+         </tr>
+         <tr class="tablerow1">
+            <td width="20%" valign="top">
+               <a href="#REC_CATCH_EXCEPTION">Exception is caught when Exception is not thrown</a>
+            </td>
+            <td width="10%" valign="top">Medium</td>
+            <td width="70%">
+               <p>Exception is caught when Exception is not thrown in com.google.gson.internal.UnsafeAllocator.create()<br/>
+                  <br/>
+                  <br/>In file UnsafeAllocator.java UnsafeAllocator.java,
+					
+						line 53 53<br/>In class com.google.gson.internal.UnsafeAllocator<br/>In method com.google.gson.internal.UnsafeAllocator.create()<br/>At UnsafeAllocator.java:[line 53]<br/>At UnsafeAllocator.java:[line 53]</p>
+            </td>
+         </tr>
+         <tr class="tablerow0">
+            <td width="20%" valign="top">
+               <a href="#REC_CATCH_EXCEPTION">Exception is caught when Exception is not thrown</a>
+            </td>
+            <td width="10%" valign="top">Medium</td>
+            <td width="70%">
+               <p>Exception is caught when Exception is not thrown in com.google.gson.internal.reflect.UnsafeReflectionAccessor.makeAccessibleWithUnsafe(AccessibleObject)<br/>
+                  <br/>
+                  <br/>In file UnsafeReflectionAccessor.java UnsafeReflectionAccessor.java,
+					
+						line 62 62<br/>In class com.google.gson.internal.reflect.UnsafeReflectionAccessor<br/>In method com.google.gson.internal.reflect.UnsafeReflectionAccessor.makeAccessibleWithUnsafe(AccessibleObject)<br/>At UnsafeReflectionAccessor.java:[line 62]<br/>At UnsafeReflectionAccessor.java:[line 62]</p>
+            </td>
+         </tr>
+         <tr class="tablerow1">
+            <td width="20%" valign="top">
+               <a href="#SF_SWITCH_FALLTHROUGH">Switch statement found where one case falls through to the next case</a>
+            </td>
+            <td width="10%" valign="top">Medium</td>
+            <td width="70%">
+               <p>Switch statement found in com.google.gson.stream.JsonReader.doPeek() where one case falls through to the next case<br/>
+                  <br/>
+                  <br/>In file JsonReader.java JsonReader.java,
+					
+						lines 471 471
+						    to 473 473<br/>In class com.google.gson.stream.JsonReader<br/>In method com.google.gson.stream.JsonReader.doPeek()<br/>At JsonReader.java:[lines 471-473]<br/>At JsonReader.java:[lines 471-473]</p>
+            </td>
+         </tr>
+         <tr class="tablerow0">
+            <td width="20%" valign="top">
+               <a href="#SF_SWITCH_FALLTHROUGH">Switch statement found where one case falls through to the next case</a>
+            </td>
+            <td width="10%" valign="top">Medium</td>
+            <td width="70%">
+               <p>Switch statement found in com.google.gson.stream.JsonReader.isLiteral(char) where one case falls through to the next case<br/>
+                  <br/>
+                  <br/>In file JsonReader.java JsonReader.java,
+					
+						lines 750 750
+						    to 762 762<br/>In class com.google.gson.stream.JsonReader<br/>In method com.google.gson.stream.JsonReader.isLiteral(char)<br/>At JsonReader.java:[lines 750-762]<br/>At JsonReader.java:[lines 750-762]</p>
+            </td>
+         </tr>
+         <tr class="tablerow1">
+            <td width="20%" valign="top">
+               <a href="#SF_SWITCH_FALLTHROUGH">Switch statement found where one case falls through to the next case</a>
+            </td>
+            <td width="10%" valign="top">Medium</td>
+            <td width="70%">
+               <p>Switch statement found in com.google.gson.stream.JsonReader.nextUnquotedValue() where one case falls through to the next case<br/>
+                  <br/>
+                  <br/>In file JsonReader.java JsonReader.java,
+					
+						lines 1052 1052
+						    to 1064 1064<br/>In class com.google.gson.stream.JsonReader<br/>In method com.google.gson.stream.JsonReader.nextUnquotedValue()<br/>At JsonReader.java:[lines 1052-1064]<br/>At JsonReader.java:[lines 1052-1064]</p>
+            </td>
+         </tr>
+         <tr class="tablerow0">
+            <td width="20%" valign="top">
+               <a href="#SF_SWITCH_FALLTHROUGH">Switch statement found where one case falls through to the next case</a>
+            </td>
+            <td width="10%" valign="top">Medium</td>
+            <td width="70%">
+               <p>Switch statement found in com.google.gson.stream.JsonReader.readEscapeCharacter() where one case falls through to the next case<br/>
+                  <br/>
+                  <br/>In file JsonReader.java JsonReader.java,
+					
+						lines 1543 1543
+						    to 1550 1550<br/>In class com.google.gson.stream.JsonReader<br/>In method com.google.gson.stream.JsonReader.readEscapeCharacter()<br/>At JsonReader.java:[lines 1543-1550]<br/>At JsonReader.java:[lines 1543-1550]</p>
+            </td>
+         </tr>
+         <tr class="tablerow1">
+            <td width="20%" valign="top">
+               <a href="#SF_SWITCH_FALLTHROUGH">Switch statement found where one case falls through to the next case</a>
+            </td>
+            <td width="10%" valign="top">Medium</td>
+            <td width="70%">
+               <p>Switch statement found in com.google.gson.stream.JsonReader.skipUnquotedValue() where one case falls through to the next case<br/>
+                  <br/>
+                  <br/>In file JsonReader.java JsonReader.java,
+					
+						lines 1131 1131
+						    to 1143 1143<br/>In class com.google.gson.stream.JsonReader<br/>In method com.google.gson.stream.JsonReader.skipUnquotedValue()<br/>At JsonReader.java:[lines 1131-1143]<br/>At JsonReader.java:[lines 1131-1143]</p>
+            </td>
+         </tr>
+      </table>
+      <p>
+         <br/>
+         <br/>
+      </p>
+      <p>
+         <br/>
+         <br/>
+      </p>
+      <h1>
+         <a name="Details">Warning Types</a>
+      </h1>
+      <h2>
+         <a name="EI_EXPOSE_REP2">May expose internal representation by incorporating reference to mutable object</a>
+      </h2>
+
+  <p> This code stores a reference to an externally mutable object into the
+  internal representation of the object.&nbsp;
+   If instances
+   are accessed by untrusted code, and unchecked changes to
+   the mutable object would compromise security or other
+   important properties, you will need to do something different.
+  Storing a copy of the object is better approach in many situations.</p>
+
+    <p>
+         <br/>
+         <br/>
+      </p>
+      <h2>
+         <a name="MS_CANNOT_BE_FINAL">Field isn't final and can't be protected from malicious code</a>
+      </h2>
+
+  <p>
+ A mutable static field could be changed by malicious code or
+        by accident from another package.
+   Unfortunately, the way the field is used doesn't allow
+   any easy fix to this problem.</p>
+
+    <p>
+         <br/>
+         <br/>
+      </p>
+      <h2>
+         <a name="NP_LOAD_OF_KNOWN_NULL_VALUE">Load of known null value</a>
+      </h2>
+
+  <p> The variable referenced at this point is known to be null due to an earlier
+   check against null. Although this is valid, it might be a mistake (perhaps you
+intended to refer to a different variable, or perhaps the earlier check to see if the
+variable is null should have been a check to see if it was non-null).
+</p>
+
+    <p>
+         <br/>
+         <br/>
+      </p>
+      <h2>
+         <a name="NP_BOOLEAN_RETURN_NULL">Method with Boolean return type returns explicit null</a>
+      </h2>
+       
+       <p>
+    A method that returns either Boolean.TRUE, Boolean.FALSE or null is an accident waiting to happen.
+    This method can be invoked as though it returned a value of type boolean, and
+    the compiler will insert automatic unboxing of the Boolean value. If a null value is returned,
+    this will result in a NullPointerException.
+       </p>
+       
+       <p>
+         <br/>
+         <br/>
+      </p>
+      <h2>
+         <a name="REC_CATCH_EXCEPTION">Exception is caught when Exception is not thrown</a>
+      </h2>
+  
+  <p>
+  This method uses a try-catch block that catches Exception objects, but Exception is not
+  thrown within the try block, and RuntimeException is not explicitly caught.  It is a common bug pattern to
+  say try { ... } catch (Exception e) { something } as a shorthand for catching a number of types of exception
+  each of whose catch blocks is identical, but this construct also accidentally catches RuntimeException as well,
+  masking potential bugs.
+  </p>
+  <p>A better approach is to either explicitly catch the specific exceptions that are thrown,
+  or to explicitly catch RuntimeException exception, rethrow it, and then catch all non-Runtime Exceptions, as shown below:</p>
+<pre><code>try {
+    ...
+} catch (RuntimeException e) {
+    throw e;
+} catch (Exception e) {
+    ... deal with all non-runtime exceptions ...
+}
+</code></pre>
+  
+     <p>
+         <br/>
+         <br/>
+      </p>
+      <h2>
+         <a name="SA_FIELD_SELF_ASSIGNMENT">Self assignment of field</a>
+      </h2>
+
+<p> This method contains a self assignment of a field; e.g.
+</p>
+<pre><code>int x;
+public void foo() {
+    x = x;
+}
+</code></pre>
+<p>Such assignments are useless, and may indicate a logic error or typo.</p>
+
+    <p>
+         <br/>
+         <br/>
+      </p>
+      <h2>
+         <a name="SF_SWITCH_FALLTHROUGH">Switch statement found where one case falls through to the next case</a>
+      </h2>
+
+  <p> This method contains a switch statement where one case branch will fall through to the next case.
+  Usually you need to end this case with a break or return.</p>
+
+    <p>
+         <br/>
+         <br/>
+      </p>
+      <h2>
+         <a name="SE_BAD_FIELD">Non-transient non-serializable instance field in serializable class</a>
+      </h2>
+
+<p> This Serializable class defines a non-primitive instance field which is neither transient,
+Serializable, or <code>java.lang.Object</code>, and does not appear to implement
+the <code>Externalizable</code> interface or the
+<code>readObject()</code> and <code>writeObject()</code> methods.&nbsp;
+Objects of this class will not be deserialized correctly if a non-Serializable
+object is stored in this field.</p>
+
+    <p>
+         <br/>
+         <br/>
+      </p>
+   </body>
+</html>
